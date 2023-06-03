@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './components/autentication/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { RouterModule, RouterModule } from '@angular/router';
+import {  RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 @NgModule({
