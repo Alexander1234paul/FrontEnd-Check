@@ -1,0 +1,38 @@
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <br />
+    <br />
+    <div class="fadeIn first">
+      <img src="assets/ax.png" id="icon" alt="User Icon" />
+    </div>
+    <br />
+    <br />
+    <!-- Login Form -->
+    <form [formGroup]="formLogin">
+      <input type="text" formControlName="user" placeholder="Usuario" form />
+      <input
+        type="password"
+        formControlName="password"
+        placeholder="Contraseña"
+      />
+      <br />
+      <div class="container__resp" *ngIf="estado">
+        <h4>{{ resp }}</h4>
+      </div>
+      <input
+        type="button"
+        class="fadeIn fourth"
+        (click)="login(formLogin.value)"
+        value="Iniciar Sesión"
+      />
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Olvidaste tu contraseña?</a>
+    </div>
+  </div>
+</div>
