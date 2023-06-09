@@ -8,11 +8,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {  RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { RegisterCompanyComponent } from './components/administration/register-company/register-company.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterCompanyComponent
   ],
   imports: [
     BrowserModule,
