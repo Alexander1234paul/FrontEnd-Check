@@ -6,15 +6,17 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './components/autentication/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import {  RouterModule } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { RegisterCompanyComponent } from './components/administration/register-company/register-company.component';
+import { UsersComponent } from './components/administration/users/users.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterCompanyComponent
+    RegisterCompanyComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
@@ -24,12 +26,8 @@ import { RegisterCompanyComponent } from './components/administration/register-c
     FormsModule,
     ReactiveFormsModule,
     RouterModule,
-    
     FormsModule,
-   
     CommonModule
-    
-    
   ],
   providers: [],
   bootstrap: [AppComponent]
